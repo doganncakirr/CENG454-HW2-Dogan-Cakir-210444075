@@ -4,18 +4,20 @@ using System.Collections;
 public class DangerZoneController : MonoBehaviour
 {
     [SerializeField] private FlightExamManager examManager;
-    [SerializeField] private float missileDelay = 5f; // 5 second rule
+    [SerializeField] private MissileLauncher missileLauncher; // Reference to the launcher
+    [SerializeField] private float missileDelay = 5f;
 
     private Coroutine activeCountdown;
+    private Transform playerTransform; // Cached reference to the player's transform
 
     private void OnTriggerEnter(Collider other)
     {
-        // Is the object that entered our plane?
         if (other.CompareTag("Player"))
         {
             examManager.EnterDangerZone();
+            playerTransform = other.transform; // Cache the player as the target
             
-            // Start the 5-second missile timer.
+            // Start the delayed missile launch countdown
             activeCountdown = StartCoroutine(MissileCountdown());
         }
     }
@@ -26,19 +28,24 @@ public class DangerZoneController : MonoBehaviour
         {
             examManager.ExitDangerZone();
             
-            // If the player exits before the 5 seconds are up, cancel the timer
+            // Cancel any pending launch countdown if the player exits early
             if (activeCountdown != null)
             {
                 StopCoroutine(activeCountdown);
                 activeCountdown = null;
-                Debug.Log("Countdown Cancelled! Player escaped early.");
             }
+            
+            // Destroy the active missile and clear the HUD warning
+            missileLauncher.DestroyActiveMissile();
         }
     }
 
     private IEnumerator MissileCountdown()
     {
         yield return new WaitForSeconds(missileDelay);
-        Debug.Log("5 seconds passed! Missile Launched! (We will add the actual missile in Task 3)");
+        
+        // 5 seconds passed! Launch the missile and pass the player as the target
+        missileLauncher.Launch(playerTransform);
+        activeCountdown = null;
     }
 }
