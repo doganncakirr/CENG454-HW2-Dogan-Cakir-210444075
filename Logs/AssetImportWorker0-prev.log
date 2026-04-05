@@ -1,41 +1,38 @@
-Unity Editor version:    6000.4.0f1 (8cf496087c8f)
-Branch:                  6000.4/staging
-Build type:              Release
-Batch mode:              YES
-macOS version:           Version 15.5 (Build 24F74)
-Darwin version:          24.5.0
-Architecture:            arm64
-Running under Rosetta:   NO
-Available memory:        8192 MB
-Date:                    2026-03-20T21:48:03Z
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-dogancakir" at "2026-03-20T21:48:03.903869Z"
+Built from '6000.4/staging' branch; Version is '6000.4.0f1 (8cf496087c8f) revision 9237654'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'tr' Physical Memory: 16310 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Administrator" at "2026-04-01T12:37:34.908331Z"
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-04-01T12:37:34Z
 
 COMMAND LINE ARGUMENTS:
-/Applications/Unity/Hub/Editor/6000.4.0f1/Unity.app/Contents/MacOS/Unity
+C:\Program Files\Unity\Hub\Editor\6000.4.0f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-/Users/dogancakir/Desktop/BOS/bos2/CENG454-HW1-Dogan-Cakir-210444075/Flight_sim Homework
+C:/Users/Administrator/Desktop/CENG454-HW2-Dogan-Cakir-210444075
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53613
+56491
 -licensingIpc
-LicenseClient-dogancakir
--force-metal
+LicenseClient-Administrator
+-force-d3d12
 -job-worker-count
-3
+5
 -background-job-worker-count
 8
 -gc-helper-count
 1
--name AssetImport
-Successfully changed project path to: /Users/dogancakir/Desktop/BOS/bos2/CENG454-HW1-Dogan-Cakir-210444075/Flight_sim Homework
-/Users/dogancakir/Desktop/BOS/bos2/CENG454-HW1-Dogan-Cakir-210444075/Flight_sim Homework
+-name
+AssetImport
+Successfully changed project path to: C:/Users/Administrator/Desktop/CENG454-HW2-Dogan-Cakir-210444075
+C:/Users/Administrator/Desktop/CENG454-HW2-Dogan-Cakir-210444075
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
@@ -45,12 +42,12 @@ Successfully changed project path to: /Users/dogancakir/Desktop/BOS/bos2/CENG454
     "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
     "memorysetup-temp-allocator-size-audio-worker=65536"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
     "memorysetup-allocator-temp-initial-block-size-main=262144"
     "memorysetup-allocator-temp-initial-block-size-worker=262144"
-    "memorysetup-temp-allocator-size-background-worker=32768"
-    "memorysetup-temp-allocator-size-job-worker=262144"
-    "memorysetup-temp-allocator-size-preload-manager=33554432"
-    "memorysetup-temp-allocator-size-gfx=262144"
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
     "memorysetup-bucket-allocator-block-size=33554432"
@@ -71,23 +68,19 @@ Successfully changed project path to: /Users/dogancakir/Desktop/BOS/bos2/CENG454
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [8315084544]  Target information:
+Player connection [24184]  Target information:
 
-Player connection [8315084544]  * "[IP] 192.168.2.237 [Port] 0 [Flags] 2 [Guid] 4216696743 [EditorId] 4216696743 [Version] 1048832 [Id] OSXEditor(0,Dogan-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [24184]  * "[IP] 192.168.1.101 [Port] 0 [Flags] 2 [Guid] 3739131570 [EditorId] 3739131570 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-9QFPADF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [8315084544] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [8315084544] Host joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 3
+Player connection [24184]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3739131570 [EditorId] 3739131570 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-9QFPADF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [24184] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [24184] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
 Library Redirect Path: Library/
-[Licensing::Client] Error: HandshakeResponse reported an error:
-	ResponseCode: 505
-	ResponseStatus: Unsupported protocol version '1.18.1'.
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-dogancakir"
-[Licensing::IpcConnector] LicenseClient-dogancakir channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-dogancakir-6000.4.0" at "2026-03-20T21:48:04.483463Z"
 [Physics::Module] Selected backend.
 [Physics::Module] Name: PhysX
 [Physics::Module] Id: 0xf2b8ea05
@@ -95,69 +88,75 @@ Library Redirect Path: Library/
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
 Initialize engine version: 6000.4.0f1 (8cf496087c8f)
-[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.4.0f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/dogancakir/Desktop/BOS/bos2/CENG454-HW1-Dogan-Cakir-210444075/Flight_sim Homework/Assets
-Forcing GfxDevice: Metal
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Administrator/Desktop/CENG454-HW2-Dogan-Cakir-210444075/Assets
+Forcing GfxDevice: Direct3D 12
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
- preferred device: Apple M2 (high power)
-Metal devices available: 1
-0: Apple M2 (high power)
-Using device Apple M2 (high power)
-Initializing Metal device caps: Apple M2
-Mac GPU Family: 2
-Apple GPU Family: 8
-MSL Version: 3.0
-Has Float MSAA: 1
-Has Float Filtering: 1
-ReadWrite Texture Tier: 2
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        AMD Radeon RX 6750 XT (ID=0x73df)
+    Vendor:          ATI
+    VRAM:            12243 MB
+    App VRAM Budget: 11475 MB
+    Driver:          32.0.21043.5001
 Initialize mono
-Mono path[0] = '/Applications/Unity/Hub/Editor/6000.4.0f1/Unity.app/Contents/Resources/Scripting/Managed'
-Mono path[1] = '/Applications/Unity/Hub/Editor/6000.4.0f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
-Mono config path = '/Applications/Unity/Hub/Editor/6000.4.0f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56554
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56852
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: /Applications/Unity/Hub/Editor/6000.4.0f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000804 seconds.
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.18.1+9fbee8e
-  Session Id:              df31f51f1d3848c5b51c5d0798a04523
-  Correlation Id:          873eaebe8c41570337368b7b2df03059
-  External correlation Id: 1818089808276856294
-  Machine Id:              pc7tMY+7U3O6kpELTy6fIQxK0lU=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-dogancakir-6000.4.0" (connect: 0.00s, validation: 0.00s, handshake: 0.57s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-dogancakir-6000.4.0-notifications" at "2026-03-20T21:48:05.0563Z"
-[Licensing::Module] Licensing Background thread has ended after 1.15s
-Native extension for OSXStandalone target not found
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006159 seconds.
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.1'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-Administrator"
+[Licensing::IpcConnector] LicenseClient-Administrator channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Administrator-6000.4.0" at "2026-04-01T12:37:36.6131867Z"
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.294 seconds
-Domain Reload Profiling: 655ms
-	BeginReloadAssembly (96ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (42ms)
-	LoadAllAssembliesAndSetupDomain (175ms)
-		LoadAssemblies (96ms)
-		AnalyzeDomain (166ms)
-			TypeCache.Refresh (165ms)
-				TypeCache.ScanAssembly (152ms)
-	FinalizeReload (295ms)
+- Finished resetting the current domain, in  0.695 seconds
+Domain Reload Profiling: 1583ms
+	BeginReloadAssembly (228ms)
+	RebuildCommonClasses (78ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (159ms)
+	LoadAllAssembliesAndSetupDomain (396ms)
+		LoadAssemblies (219ms)
+		AnalyzeDomain (381ms)
+			TypeCache.Refresh (378ms)
+				TypeCache.ScanAssembly (356ms)
+	FinalizeReload (699ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (31ms)
-			BeforeProcessingInitializeOnLoad (67ms)
-			ProcessInitializeOnLoadAttributes (82ms)
-			ProcessInitializeOnLoadMethodAttributes (66ms)
-[CoreBusinessMetrics] Unexpected thread when updating session info.
+			InitializePlatformSupportModulesInManaged (72ms)
+			BeforeProcessingInitializeOnLoad (152ms)
+			ProcessInitializeOnLoadAttributes (221ms)
+			ProcessInitializeOnLoadMethodAttributes (148ms)
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              cb755b6565234f1690816d8aea4a0186
+  Correlation Id:          0cc6868f660ae896ed970a1b2761b8da
+  External correlation Id: 6431286509715901443
+  Machine Id:              SaEkKwBErfxMSDCusDsluaZ0JnU=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Administrator-6000.4.0" (connect: 0.00s, validation: 0.00s, handshake: 1.59s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Administrator-6000.4.0-notifications" at "2026-04-01T12:37:38.2035858Z"
+[Licensing::Module] Licensing Background thread has ended after 3.30s
+[Licensing::Module] Licensing is initialized (took 0.30s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 18968382389062-UnityPersXXXX
@@ -169,232 +168,149 @@ Assembly Assembly-CSharp-Editor.dll at Library/ScriptAssemblies/Assembly-CSharp-
 Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
 Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
 Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
-Native extension for OSXStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.252 seconds
-Domain Reload Profiling: 451ms
-	BeginReloadAssembly (115ms)
-		DisableScriptedObjects (3ms)
-		CreateAndSetChildDomain (28ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (19ms)
-	LoadAllAssembliesAndSetupDomain (18ms)
-		LoadAssemblies (53ms)
-		AnalyzeDomain (10ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (3ms)
-	FinalizeReload (253ms)
+- Finished resetting the current domain, in  0.493 seconds
+Domain Reload Profiling: 1216ms
+	BeginReloadAssembly (564ms)
+		DisableScriptedObjects (9ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (56ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (22ms)
+		LoadAssemblies (162ms)
+		AnalyzeDomain (11ms)
+			TypeCache.Refresh (7ms)
+	FinalizeReload (495ms)
 		SetupLoadedEditorAssemblies (0ms)
-			BeforeProcessingInitializeOnLoad (67ms)
-			ProcessInitializeOnLoadAttributes (60ms)
-			ProcessInitializeOnLoadMethodAttributes (29ms)
-Launching external process: /Applications/Unity/Hub/Editor/6000.4.0f1/Unity.app/Contents/Helpers/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (136ms)
+			ProcessInitializeOnLoadAttributes (126ms)
+			ProcessInitializeOnLoadMethodAttributes (57ms)
+			AfterProcessingInitializeOnLoad (14ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 65 unused Assets / (24.6 KB). Loaded Objects now: 666.
-Memory consumption went from 69.8 MB to 69.8 MB.
-Total: 3.628542 ms (FindLiveObjects: 0.028625 ms CreateObjectMapping: 0.006500 ms MarkObjects: 3.530333 ms  DeleteObjects: 0.062750 ms)
+Unloading 65 unused Assets / (30.3 KB). Loaded Objects now: 668.
+Memory consumption went from 65.9 MB to 65.9 MB.
+Total: 5.065000 ms (FindLiveObjects: 0.045500 ms CreateObjectMapping: 0.008100 ms MarkObjects: 4.918600 ms  DeleteObjects: 0.090800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 23796.239272 seconds.
+  Time since last request: 8755.411128 seconds.
   path: Assets/Models/Aircraft/Materials/spitfire_ao.mat
   importAddress: Guid(320786067b6e4214dabd3f4787658b38) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Models/Aircraft/Materials/spitfire_ao.mat using Guid(320786067b6e4214dabd3f4787658b38) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c91f50d202a751d0b13aeca8ed9abe9e') in 0.060419041 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=95b78ca18e4a789c5b3bcc0d41e5aa98 DependenciesID=2557cc8e4608a59622e06de0dfee00e5 StaticDependenciesID=bc0eaf3102be5e82a2450282958728a7 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+Start importing Assets/Models/Aircraft/Materials/spitfire_ao.mat using Guid(320786067b6e4214dabd3f4787658b38) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd5f2c88ffa57d9ac3d56fe5efbfc540f') in 0.1475718 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9ed2731e19acbc5f6662b49a0a2ecd96 DependenciesID=79f431ee89f9f3ce61a23f94f165244c StaticDependenciesID=217ff04d7d2af3919c57a7aaa733b14b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000032 seconds.
+  Time since last request: 0.000020 seconds.
   path: Assets/Models/Aircraft/spitfire_d.png
   importAddress: Guid(8189bd4d00ef69641b78b4c984035a7f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Models/Aircraft/spitfire_d.png using Guid(8189bd4d00ef69641b78b4c984035a7f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'bb4b1ee624f355ade2b48a4e2808ffb7') in 0.042615958 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4fca39f1d31baef3962ab3352d7d6549 DependenciesID=6a0ebe99db9f1b03f0482ab24de97826 StaticDependenciesID=4125391fce9e12b21f370691afb7a66a 
+Start importing Assets/Models/Aircraft/spitfire_d.png using Guid(8189bd4d00ef69641b78b4c984035a7f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '84adc55ff6eaf9463230cbce6b3ab8b4') in 0.0730126 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d3965eee6977eab0f7561bd6aeb02d3d DependenciesID=5ef122aef8a91d125cf4a612223a6964 StaticDependenciesID=ec582ddf277dfcdee766c8e8bfa858c2 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000139 seconds.
+  Time since last request: 0.000036 seconds.
   path: Assets/Models/Aircraft/spitfire_n.png
   importAddress: Guid(09856657308694e478286c250bd5dacd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Models/Aircraft/spitfire_n.png using Guid(09856657308694e478286c250bd5dacd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6c7c9ee3bfffb3a557a4cb0ae4eb94a7') in 0.010836375 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1554152d917b3c4a689a90bd26b7dccd DependenciesID=327387ea3d812269c5237fa28016a1ff StaticDependenciesID=a469e7cdff9b25e9c1d67de417049a5e 
+Start importing Assets/Models/Aircraft/spitfire_n.png using Guid(09856657308694e478286c250bd5dacd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f880768f1d3271b760638e65d28a5fbe') in 0.0189724 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=382ed31959ecf7461553d6db81998388 DependenciesID=0d9c010ac34f7647eeddada1956809f2 StaticDependenciesID=c18028b2285dc35d2324dcc88233f4b8 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000075 seconds.
+  Time since last request: 0.000018 seconds.
   path: Assets/Models/Aircraft/spitfire_r.png
   importAddress: Guid(7957694f23ee7e042a2ae02c52ed0082) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Models/Aircraft/spitfire_r.png using Guid(7957694f23ee7e042a2ae02c52ed0082) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '882641e66085db3070f4204d903c7ac9') in 0.005752042 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=485dccc721593abb002a7750236dd195 DependenciesID=4058df04cf50f7b5726a5ea172ce276d StaticDependenciesID=b8072d52e63b912d509436b6fad2785e 
+Start importing Assets/Models/Aircraft/spitfire_r.png using Guid(7957694f23ee7e042a2ae02c52ed0082) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'cd913c7fe4cd61e01934d8a6658455d9') in 0.019855 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9e5da4868f0eaf1ba184ff0471a819e4 DependenciesID=16061c6d6adc24a2cd145cac42ec2762 StaticDependenciesID=48fbadcf7b6cc5c21b07e5deca89ba21 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000044 seconds.
+  Time since last request: 0.000019 seconds.
   path: Assets/Models/Aircraft/spitfire_ao.png
   importAddress: Guid(62f48b5d2a17b0543bdc9799aec23208) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Models/Aircraft/spitfire_ao.png using Guid(62f48b5d2a17b0543bdc9799aec23208) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '64f6a8249db6134242b9515ea34beec6') in 0.009543875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7df5a5b22593c858f7ff571abc4eb1b9 DependenciesID=0636bf058b7e7983cb6784c4026541b5 StaticDependenciesID=3cd0f64425134b5f1cb543724212a26f 
+Start importing Assets/Models/Aircraft/spitfire_ao.png using Guid(62f48b5d2a17b0543bdc9799aec23208) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5a90a8e15e5c8850b8538f0baca3ad33') in 0.0197598 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=18b42eecd4cad32c955fb73013db2826 DependenciesID=a872b105c0170e314d5e65455832a700 StaticDependenciesID=8bf6da1b3196b1d84b724ca195892249 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000163 seconds.
+  Time since last request: 0.000015 seconds.
   path: Assets/Models/Aircraft/Materials/spitfire_m.mat
   importAddress: Guid(9cd8391fa2c0a364fa8204051861279f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Models/Aircraft/Materials/spitfire_m.mat using Guid(9cd8391fa2c0a364fa8204051861279f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd05cb9aa6cddd2949c80d9183a04f1da') in 0.002219583 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2437fb070ad349a6b28b25084bd423e6 DependenciesID=1d37f629336c786b75b50b23cde6ba0a StaticDependenciesID=e6e057e1e78200b4ce091af07c8f68c0 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+Start importing Assets/Models/Aircraft/Materials/spitfire_m.mat using Guid(9cd8391fa2c0a364fa8204051861279f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'dc151422c69deb710c52bfc488517126') in 0.0170794 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ef230fb6850248ece5e8e0ac44734a2 DependenciesID=940e1fda51a98487c88ca10ebaebbed3 StaticDependenciesID=ff5c5765c45992dd5584e5fa0a7afdce 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000200 seconds.
-  path: Assets/Models/Aircraft/Materials/spitfire_n.mat
-  importAddress: Guid(b775104ed230078409c955a9c42d77fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Models/Aircraft/Materials/spitfire_n.mat using Guid(b775104ed230078409c955a9c42d77fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6b437c57c76cc2fdf14c21e760d1bbcd') in 0.001586542 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ef74f8527e4e437311cbe82921bb591f DependenciesID=f334bb80c640ecde7c99373c60c3358e StaticDependenciesID=f54770dd4c477dd834631d6d702c44c9 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000131 seconds.
+  Time since last request: 0.000017 seconds.
   path: Assets/Scenes/SampleScene.unity
   importAddress: Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '908a061e2dce052dd78ba7162197de6a') in 0.001664583 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=38b81faf9a798b9bb15637d151196c49 DependenciesID=6dd61e522fb07b0a6f31b656080139c7 StaticDependenciesID=685804caeb019ab61c1a9d5651fbe6ae 
+Start importing Assets/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '01e53d49379f4cd9c0c0d30ccebdde79') in 0.01401 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c2afa6aea32b33c273197c2decef589a DependenciesID=cb2bc2d36bcfe6fa1eb14f56899f7986 StaticDependenciesID=66b8528350ac72da7d638e52c0ef4153 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000109 seconds.
-  path: Assets/Scripts/FlightController.cs
-  importAddress: Guid(6aa5ba92df51781409328dc1a9ee21a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scripts/FlightController.cs using Guid(6aa5ba92df51781409328dc1a9ee21a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b7ca635659580a5f50148f2e39773e48') in 0.002817292 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a3acada25351a05c5af2bc4438de5995 DependenciesID=e2ba69f7d06fda032ca5402cf2ce389b StaticDependenciesID=e85a4f295b3b203e32f1e0177881c6cb 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.323297 seconds.
+  Time since last request: 26.375547 seconds.
   path: Assets/Scenes
   importAddress: Guid(9d0add540f87f4170942790bd1c2f401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(9d0add540f87f4170942790bd1c2f401) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '5af2bc0b0866a32ee209cdd7db54ae8f') in 0.003520041 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=773dc128d73e59da522288e23468b2e1 DependenciesID=4acfa9c27286847317b2df712612b5a5 StaticDependenciesID=a1f3c90c5f76e40b65e83c29e0a84fba 
+Start importing Assets/Scenes using Guid(9d0add540f87f4170942790bd1c2f401) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '5a6bc7bc8a518dca68eac81500fe6933') in 0.0008044 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=773dc128d73e59da522288e23468b2e1 DependenciesID=2525ae16aac8112b2224fbfec42c929c StaticDependenciesID=732a59c43e75de4e500c5aad1e02003a 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.351426 seconds.
+  Time since last request: 0.799853 seconds.
   path: Assets/Scenes/SampleScene.unity
   importAddress: Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'e9d8adeb9ca1f6e0e50d748c2987f874') in 0.000447084 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f3af80aa444126da7ef9e80fc4827f87 DependenciesID=72049d647f9e5b30d6eefc0fd95092e5 StaticDependenciesID=d4b35d751e304a8792fbb879992d52ea 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.970967 seconds.
-  path: Assets/Models/Aircraft/Materials/spitfire_ao.mat
-  importAddress: Guid(320786067b6e4214dabd3f4787658b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Aircraft/Materials/spitfire_ao.mat using Guid(320786067b6e4214dabd3f4787658b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'da12868ab37249016c6d25bf6a3c72ea') in 0.204166792 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3c58ca223b55a09ee26f7490b2e3a06d DependenciesID=80c553fbdefb501f725d37dc13a5cf70 StaticDependenciesID=f55ea8dd51bdad9bcad7e52f26457f7c 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Models/Aircraft/Materials/spitfire_r.mat
-  importAddress: Guid(57a824d97f8503d439ae514a6b4772db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Aircraft/Materials/spitfire_r.mat using Guid(57a824d97f8503d439ae514a6b4772db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'bcd6ab481d83031189bb94264d1c32fd') in 0.005929292 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b7d7410e6b9e9ed5f2c43a993fd840f9 DependenciesID=baaa1942196f9cab8c5b5ce27bd1c021 StaticDependenciesID=035092d40ee7291f96f5e35530a24a2a 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Models/Aircraft/Materials/spitfire_m.mat
-  importAddress: Guid(9cd8391fa2c0a364fa8204051861279f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Aircraft/Materials/spitfire_m.mat using Guid(9cd8391fa2c0a364fa8204051861279f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '66e4de7fea553c100b188077c0fbb8d2') in 0.008278708 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fe0e01fc8cfd48595a443bd97523bb23 DependenciesID=da438f746aa2480d769461936ef8a433 StaticDependenciesID=5c8f97f4c1ef5f7f63d0ac512f4ccd9b 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-Thread 0x179517000 may have been prematurely finalized
-Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
-Assembly Assembly-CSharp-Editor.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor.dll not valid. Loading of assembly skipped.
-Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
-Native extension for OSXStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.255 seconds
-Domain Reload Profiling: 485ms
-	BeginReloadAssembly (146ms)
-		DisableScriptedObjects (5ms)
-		CreateAndSetChildDomain (37ms)
-	RebuildCommonClasses (37ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (21ms)
-	LoadAllAssembliesAndSetupDomain (14ms)
-		LoadAssemblies (58ms)
-		AnalyzeDomain (7ms)
-			TypeCache.Refresh (4ms)
-	FinalizeReload (257ms)
-		SetupLoadedEditorAssemblies (0ms)
-			BeforeProcessingInitializeOnLoad (71ms)
-			ProcessInitializeOnLoadAttributes (57ms)
-			ProcessInitializeOnLoadMethodAttributes (36ms)
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 63 unused Assets / (1.0 KB). Loaded Objects now: 708.
-Memory consumption went from 79.2 MB to 79.2 MB.
-Total: 3.806083 ms (FindLiveObjects: 0.028125 ms CreateObjectMapping: 0.006625 ms MarkObjects: 3.746167 ms  DeleteObjects: 0.025042 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 183.781307 seconds.
-  path: Assets/Scripts/FlightController.cs
-  importAddress: Guid(6aa5ba92df51781409328dc1a9ee21a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/FlightController.cs using Guid(6aa5ba92df51781409328dc1a9ee21a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'ed54d19649fab9c7062908b456da5ba6') in 0.006809083 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8cff0df079abd71a52c1ac4e674ecdbe DependenciesID=1b9d0502942216c62492ef5e2666eb48 StaticDependenciesID=b4dd83fa6c1bfc16832c4c501ad03523 
+Start importing Assets/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '7bcf6b44dc4efc7b515be6eab768eada') in 0.0006014 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f3af80aa444126da7ef9e80fc4827f87 DependenciesID=a65d95b532f3cdf2bf94e31760b898d9 StaticDependenciesID=7adb1692ee772ef61f6fd844f99a0b36 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-Thread 0x16fac3000 may have been prematurely finalized
 Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
 Assembly Assembly-CSharp-Editor.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor.dll not valid. Loading of assembly skipped.
 Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
 Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
 Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
-Native extension for OSXStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.281 seconds
-Domain Reload Profiling: 517ms
-	BeginReloadAssembly (154ms)
-		DisableScriptedObjects (7ms)
-		CreateAndSetChildDomain (40ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (24ms)
-	LoadAllAssembliesAndSetupDomain (14ms)
-		LoadAssemblies (59ms)
+- Finished resetting the current domain, in  0.460 seconds
+Domain Reload Profiling: 839ms
+	BeginReloadAssembly (237ms)
+		DisableScriptedObjects (8ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (49ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (58ms)
+	LoadAllAssembliesAndSetupDomain (18ms)
+		LoadAssemblies (158ms)
 		AnalyzeDomain (7ms)
 			TypeCache.Refresh (3ms)
-	FinalizeReload (282ms)
+	FinalizeReload (461ms)
 		SetupLoadedEditorAssemblies (0ms)
-			BeforeProcessingInitializeOnLoad (76ms)
-			ProcessInitializeOnLoadAttributes (70ms)
-			ProcessInitializeOnLoadMethodAttributes (33ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (126ms)
+			ProcessInitializeOnLoadAttributes (112ms)
+			ProcessInitializeOnLoadMethodAttributes (55ms)
+			AfterProcessingInitializeOnLoad (14ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 63 unused Assets / (1.0 KB). Loaded Objects now: 708.
-Memory consumption went from 83.9 MB to 83.9 MB.
-Total: 7.236292 ms (FindLiveObjects: 0.244666 ms CreateObjectMapping: 0.191542 ms MarkObjects: 6.772416 ms  DeleteObjects: 0.025958 ms)
+Unloading 63 unused Assets / (1.0 KB). Loaded Objects now: 670.
+Memory consumption went from 66.4 MB to 66.4 MB.
+Total: 4.470400 ms (FindLiveObjects: 0.044200 ms CreateObjectMapping: 0.007700 ms MarkObjects: 4.382400 ms  DeleteObjects: 0.035300 ms)
 
 Prepare: number of updated asset objects reloaded= 0
