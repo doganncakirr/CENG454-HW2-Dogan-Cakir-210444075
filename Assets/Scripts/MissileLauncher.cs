@@ -16,7 +16,12 @@ public class MissileLauncher : MonoBehaviour
         // Instantiate the missile at the launch point (Task 3-A)
         activeMissile = Instantiate(missilePrefab, launchPoint.position, launchPoint.rotation);
 
-        // Note: We will handle assigning the target (Task 3-B) in the "MissileHoming" script.
+        // Tell the missile who to follow (Task 3-B)
+        MissileHoming homingComponent = activeMissile.GetComponent<MissileHoming>();
+        if (homingComponent != null)
+        {
+            homingComponent.SetTarget(target);
+        }
         
         // Play launch audio (Task 3-C)
         if (launchAudioSource != null)
@@ -35,6 +40,12 @@ public class MissileLauncher : MonoBehaviour
         {
             Destroy(activeMissile);
             activeMissile = null;
+        }
+
+        // Stop the flying sound when the missile is destroyed!
+        if (launchAudioSource != null)
+        {
+            launchAudioSource.Stop();
         }
     }
 }
