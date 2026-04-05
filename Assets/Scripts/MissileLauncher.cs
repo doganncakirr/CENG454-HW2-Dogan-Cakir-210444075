@@ -1,3 +1,7 @@
+// MissileLauncher.cs 
+// CENG 454 - HW2 Midterm: Sky-High Prototype II 
+// Author: Doğan Çakır | Student ID: 210444075
+
 using UnityEngine;
 
 public class MissileLauncher : MonoBehaviour
