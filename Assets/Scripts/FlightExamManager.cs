@@ -55,4 +55,30 @@ public class FlightExamManager : MonoBehaviour
         }
         missionComplete = false;
     }
+
+    public void CompleteMission()
+    {
+        // Do nothing if the mission is already complete or the aircraft is destroyed
+        if (missionComplete || isDestroyed) return;
+
+        // Landing validation: Has the threat been cleared? (Task 4.2)
+        if (threatCleared)
+        {
+            if (statusText != null)
+            {
+                statusText.text = "Mission Complete! Excellent flying.";
+                statusText.color = Color.blue;
+            }
+            missionComplete = true;
+        }
+        else
+        {
+            // Warn the player if they try to land without entering the danger zone
+            if (statusText != null)
+            {
+                statusText.text = "Cannot land yet! You must enter and clear the Threat Zone.";
+                statusText.color = Color.yellow;
+            }
+        }
+    }
 }
