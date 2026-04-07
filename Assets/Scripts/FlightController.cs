@@ -10,9 +10,10 @@ public class FlightController : MonoBehaviour
     [SerializeField] private float yawSpeed = 45f;     // degrees/second
     [SerializeField] private float rollSpeed = 45f;    // degrees/second
     [SerializeField] private float thrustSpeed = 5f;   // units/second
-
+    public float maxSpeed = 60f;
     // TODO (Task 3-A): Declare a private Rigidbody field named 'rb'
     private Rigidbody rb;
+    public AudioSource engineSound;
 
     void Start()
     {
@@ -26,9 +27,13 @@ public class FlightController : MonoBehaviour
     void Update()
     {
         HandleRotation();
-        HandleThrust();
+        
     }
+    void FixedUpdate()
+    {
+        HandleThrust();
 
+    }
     private void HandleRotation()
     {
         // TODO (Task 3-C): Pitch, Yaw, Roll
@@ -55,7 +60,26 @@ public class FlightController : MonoBehaviour
         // Forward thrust (Spacebar)
         if (Input.GetKey(KeyCode.Space))
         {
-            transform.Translate(Vector3.forward * thrustSpeed * Time.deltaTime);
+            rb.AddForce(transform.forward * thrustSpeed);
+            if (!engineSound.isPlaying)
+            {
+                engineSound.Play();
+            }
+        
         }
+        else
+        {
+            if (engineSound.isPlaying)
+            {
+                engineSound.Stop();
+            }
+        }
+    Vector3 horizontalVelocity = new Vector3(rb.linearVelocity.x, 0, rb.linearVelocity.z);
+
+    if (horizontalVelocity.magnitude > maxSpeed)
+    {
+    Vector3 limitedVelocity = horizontalVelocity.normalized * maxSpeed;
+    rb.linearVelocity = new Vector3(limitedVelocity.x, rb.linearVelocity.y, limitedVelocity.z);
+    }
     }
 }
